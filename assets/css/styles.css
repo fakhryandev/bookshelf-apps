@@ -36,3 +36,44 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.form-card {
+  background-color: #f1f3fb;
+  padding: 10px 35px;
+}
+
+.form-card__title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.form__label {
+  font-weight: 500;
+}
+
+.form__input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-bottom-width: 2px;
+}
+
+.form__checkbox {
+  margin: 12px 0;
+}
+
+.button {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  padding: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button--submit {
+  color: white;
+  background-color: #5dade2;
+}

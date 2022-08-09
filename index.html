@@ -18,14 +18,35 @@
         <div>
           <img src="" alt="Hero Image" />
         </div>
-        <div>
+        <div class="form-card">
+          <h2 class="form-card__title">Input Buku Baru</h2>
           <form>
-            <div><label>Judul</label><input type="text" /></div>
-            <div><label>Penulis</label><input type="text" /></div>
-            <div><label>Tahun</label><input type="text" /></div>
-            <div><label>Link Cover Buku</label><input type="text" /></div>
-            <div><input type="checkbox" /><label>Selesai Baca</label></div>
-            <button>Masukkan buku ke rak</button>
+            <div class="input-wrapper">
+              <label for="book-title" class="form__label">Judul</label
+              ><input type="text" id="book-title" class="form__input" />
+            </div>
+            <div>
+              <label for="book-author" class="form__label">Penulis</label
+              ><input type="text" id="book-author" class="form__input" />
+            </div>
+            <div>
+              <label for="book-year" class="form__label">Tahun</label
+              ><input type="text" id="book-year" class="form__input" />
+            </div>
+            <div>
+              <label for="book-cover" class="form__label">Link Cover Buku</label
+              ><input type="text" id="book-cover" class="form__input" />
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" id="book-finish" /><label
+                for="book-finish"
+                class="form__label"
+                >Selesai Baca</label
+              >
+            </div>
+            <button type="button" class="button button--submit">
+              Masukkan buku ke rak
+            </button>
           </form>
         </div>
       </section>
