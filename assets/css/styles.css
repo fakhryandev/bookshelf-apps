@@ -100,3 +100,9 @@ main {
   color: white;
   background-color: #5dade2;
 }
+
+.bookshelf {
+  background-color: #f1f3fb;
+  border-radius: 10px;
+  padding-left: 20px;
+}
