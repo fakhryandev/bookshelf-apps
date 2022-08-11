@@ -1,4 +1,5 @@
 const books = [];
+const RENDER_EVENT = "render-book";
 
 document.addEventListener("DOMContentLoaded", function () {
   const submitForm = document.querySelector("form");
@@ -6,6 +7,18 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     addBook();
   });
+});
+
+document.addEventListener(RENDER_EVENT, function () {
+  const onProgressBookshelf = document.getElementById("onprogress-bookshelf");
+  const finishedBookshelf = document.getElementById("finished-bookshelf");
+
+  onProgressBookshelf.innerHTML = "";
+  finishedBookshelf.innerHTML = "";
+
+  for (const book of books) {
+    console.log(book);
+  }
 });
 
 function addBook() {
@@ -26,12 +39,13 @@ function addBook() {
 
   books.push(bookObject);
   clearForm();
+
+  document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
 function clearForm() {
   const form = document.querySelector("form");
   form.reset();
-  console.log(books);
 }
 
 function generateId() {
