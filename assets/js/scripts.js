@@ -21,6 +21,16 @@ document.addEventListener(RENDER_EVENT, function () {
   }
 });
 
+const isBookFinished = document.getElementById("book-finish");
+isBookFinished.addEventListener("change", function () {
+  const bookLabel = document.getElementById("book-label");
+  if (isBookFinished.checked) {
+    bookLabel.innerText = "Selesai Dibaca";
+  } else {
+    bookLabel.innerText = "Belum Selesai Dibaca";
+  }
+});
+
 function addBook() {
   const title = document.getElementById("book-title").value;
   const author = document.getElementById("book-author").value;
