@@ -28,6 +28,9 @@ a {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 30px 0;
 }
 
@@ -87,6 +90,10 @@ main {
   margin-left: 10px;
 }
 
+.form__book-label {
+  font-weight: bold;
+}
+
 .button {
   width: 100%;
   display: block;
@@ -101,8 +108,21 @@ main {
   background-color: #5dade2;
 }
 
+.container--bookshelf {
+  max-width: 1200px;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
 .bookshelf {
   background-color: #f1f3fb;
   border-radius: 10px;
   padding-left: 20px;
+  width: 35%;
+}
+
+.bookshelf__list {
+  display: flex;
+  flex-direction: column;
 }

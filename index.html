@@ -50,14 +50,24 @@
             </div>
             <button type="button" class="button button--submit">
               Masukkan buku ke rak
+              <span id="book-label" class="form__book-label"
+                >Belum Selesai Dibaca</span
+              >
             </button>
           </form>
         </div>
       </section>
-      <section class="container container--bokshelf">
-        <div class="bookshelf"><h2>Belum Selesai Dibaca</h2></div>
-        <div class="bookshelf"><h2>Selesai Dibaca</h2></div>
+      <section class="container container--bookshelf">
+        <div class="bookshelf">
+          <h2>Belum Selesai Dibaca</h2>
+          <div class="bookshelf__list"></div>
+        </div>
+        <div class="bookshelf">
+          <h2>Selesai Dibaca</h2>
+          <div class="bookshelf__list"></div>
+        </div>
       </section>
     </main>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
